@@ -13,8 +13,8 @@
 
 	<repositories>
 		<repository>
-			<id>repo</id>
-			<url>https://raw.github.com/amitngm/repo/selenium-pages</url>   <!-- username/repo name/branch name -->
+			<id>artifacts</id>
+			<url>https://raw.github.com/prashantsinghb/artifacts/selenium-pages</url>   <!-- username/repo name/branch name -->
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
