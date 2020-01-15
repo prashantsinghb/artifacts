@@ -9,12 +9,14 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<github.global.server>github</github.global.server>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<repositories>
 		<repository>
 			<id>artifacts</id>
-			<url>https://raw.github.com/prashantsinghb/artifacts/selenium-pages</url>   <!-- username/repo name/branch name -->
+			<url>https://github.com/prashantsinghb/artifacts/raw/selenium-pages</url>
+		<!-- 	<url>https://raw.github.com/prashantsinghb/artifacts/selenium-pages</url>   --> <!-- username/repo name/branch name -->
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
