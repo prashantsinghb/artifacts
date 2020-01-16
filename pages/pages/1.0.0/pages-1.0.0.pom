@@ -9,14 +9,13 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<github.global.server>github</github.global.server>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>artifacts</id>
+			<id>repo</id>
+			<!-- <url>https://raw.github.com/amitngm/repo/selenium-pages</url>  -->  <!-- username/repo name/branch name -->
 			<url>https://github.com/prashantsinghb/artifacts/raw/selenium-pages</url>
-		<!-- 	<url>https://raw.github.com/prashantsinghb/artifacts/selenium-pages</url>   --> <!-- username/repo name/branch name -->
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
@@ -47,10 +46,10 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-				<executable>
-				C:\Program Files\Java\jdk1.8.0_45\bin\javac.exe
-				</executable>
-				<fork>true</fork>
+					<executable>
+						C:\Program Files\Java\jdk1.8.0_45\bin\javac.exe
+					</executable>
+					<fork>true</fork>
 				</configuration>
 			</plugin>
 
@@ -76,7 +75,7 @@
 					</includes>
 					<repositoryName>artifacts</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>prashantsinghb</repositoryOwner>    <!-- github username -->
-					
+
 				</configuration>
 				<executions>
 					<!-- run site-maven-plugin's 'site' target as part of the build's normal 
@@ -97,7 +96,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.14.0</version>
+			<version>4.0.0-alpha-4</version>
 		</dependency>
 		<dependency>
 			<groupId>global</groupId>
