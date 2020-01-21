@@ -15,8 +15,8 @@
 
 	<repositories>
 		<repository>
-			<id>repo</id>
-			<url>https://raw.github.com/prashantsinghb/artifacts/selenium-global</url>   <!-- username/repo name/branch name -->
+			<id>global</id>
+			<url>https://github.com/prashantsinghb/artifacts/raw/selenium-global</url>   <!-- username/repo name/branch name -->
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
