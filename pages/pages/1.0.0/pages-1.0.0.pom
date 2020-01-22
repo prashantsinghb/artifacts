@@ -14,14 +14,27 @@
 	</properties>
 
 	<repositories>
-		<repository>
-			<id>global</id>
-			<url>https://github.com/prashantsinghb/artifacts/raw/selenium-global</url>   <!-- username/repo name/branch name -->
+        <!-- <repository>
+			<id>artifacts</id> -->
+			<!-- <url>https://github.com/prashantsinghb/artifacts/raw/selenium-global</url> --> <!-- username/repo name/branch name -->
+			<!-- <url>https://rawgit.com/prashantsinghb/artifacts/selenium-global</url> -->
+		<!-- <url>https://raw.github.com/prashantsinghb/artifacts/selenium-global</url> 
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
-		</repository>
+		</repository>-->
+		<repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>false</enabled></snapshots>
+        </repository>
+        <repository>
+          <id>github</id>
+          <name>GitHub OWNER Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/prashantsinghb/artifacts</url>
+        </repository>
 	</repositories>
 
 	<distributionManagement>
@@ -43,6 +56,8 @@
 			</resource>
 		</resources>
 		<plugins>
+			
+			
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
